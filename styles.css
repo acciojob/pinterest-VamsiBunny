@@ -1,1 +1,75 @@
 /*  your css code here. If applicable */
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+/* Hero image */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph */
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Explore button */
+.explore-button {
+  padding: 1rem 2rem;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* For better responsiveness */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+
+  .explore-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
